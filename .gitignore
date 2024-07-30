@@ -1,0 +1,49 @@
+# Archivos generados por el compilador
+*.o
+*.obj
+*.so
+*.dll
+*.lib
+*.a
+*.dylib
+*.pdb
+*.idb
+*.d
+*.dSYM/
+*.exe
+
+# Archivos del sistema de construcción
+CMakeFiles/
+CMakeCache.txt
+Makefile
+build/
+Debug/
+Release/
+*.ninja_build
+*.cmake
+
+# Archivos temporales
+*.tmp
+*.log
+*.swp
+
+# Archivos de configuración del editor
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.ncb
+*.suo
+
+# Archivos de configuraciones del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos generados por el gestor de paquetes
+conanbuildinfo.txt
+conaninfo.txt
+conan.lock
+conan_package.tgz
+
