@@ -14,7 +14,7 @@ BOOST_DIR = /usr/include
 BOOST_LIB_DIR = /usr/lib
 
 # Nombre del ejecutable
-TARGET = mi_proyecto
+TARGET = analizador
 
 # Archivos fuente
 SRCS = main.cpp

@@ -210,7 +210,7 @@ namespace Funcionalidad
 
         void menuSeleccionarArchivo(std::string carpeta = "./")
         {
-            Menu::Menu menuSeleccionarArchivoFile("Analizador Lexico/ Analizar Archivo/ Seleccionar Archivo");
+            Menu::Menu menuSeleccionarArchivoFile("Analizador Sintactico/ Analizar Archivo/ Seleccionar Archivo");
 
             try
             {
@@ -269,7 +269,7 @@ namespace Funcionalidad
         {
             limpiarPantalla();
             cout << "================================================================" << endl;
-            cout << "/Analizador Lexico/Ingresar Expresion" << endl;
+            cout << "/Analizador Sintactico/Ingresar Expresion" << endl;
             cout << "================================================================" << endl;
 
             std::string expresion;
@@ -283,9 +283,9 @@ namespace Funcionalidad
         {
             limpiarPantalla();
             cout << "================================================================" << endl;
-            cout << "/Analizador Lexico/Acerca de" << endl;
+            cout << "/Analizador Sintactico/Acerca de" << endl;
             cout << "================================================================" << endl;
-            std::cout << "Analizador Lexico" << std::endl;
+            std::cout << "Analizador Sintactico" << std::endl;
             std::cout << "Desarrollado por Equipo 1" << std::endl;
             std::cout << "para la materia de Diseño de Compiladores" << std::endl;
             std::cout << "Universidad Nacional Autonoma de Honduras" << std::endl;
@@ -296,7 +296,7 @@ namespace Funcionalidad
 
         void menuAnalizarArchivo()
         {
-            Menu::Menu menuAnalizarArchivo("Analizador Lexico /Analizar Archivo");
+            Menu::Menu menuAnalizarArchivo("Analizador Sintactico /Analizar Archivo");
 
             menuAnalizarArchivo.agregarOpcion("Elegir archivo", []()
                                               { MenuAnalizarArchivo::menuSeleccionarArchivo("archivos/"); });
@@ -309,7 +309,7 @@ namespace Funcionalidad
 
         Menu::Menu getMenuPrincipal()
         {
-            Menu::Menu menuPrincipal("Analizador Lexico");
+            Menu::Menu menuPrincipal("Analizador Sintactico");
 
             menuPrincipal.agregarOpcion("Analizar Archivo", []()
                                         { menuAnalizarArchivo(); });
